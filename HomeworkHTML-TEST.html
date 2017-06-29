@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Тест</title>
+      <meta charset="utf-8" />
+   </head>
+   
+   <body>
+      <header>  
+         <img src="./frontEndLogo.png" alt="logo" />
+         <h1 id="top">Технологии Front-End</h1>
+      </header>  
+      
+      <nav>
+         <ul>
+            <li><a href="./HomeworkHTML-MAIN.html">Главная</a></li>
+            <li><a href="./HomeworkHTML-TECHNOLOGIES.html">Технологии</a>
+               <ul>
+                  <li><a href="./HomeworkHTML-HTML.html">HTML</a></li>
+                  <li><a href="./HomeworkHTML-CSS.html">CSS</a></li>
+                  <li><a href="./HomeworkHTML-BOOTSTRAP.html">Bootstrap</a></li>
+               </ul>
+            </li>   
+            <li><a href="./HomeworkHTML-CALCULATOR.html">Калькулятор</a></li>
+            <li><a href="./HomeworkHTML-TEST.html">Тест</a></li>
+         </ul>
+      </nav>
+         
+      <main>  
+         <!--Заменить путь в action, когда будет известно, куда данные отправлять и нужно ли отправлять-->
+         <form id="test" name="test" action="http://www.example.com" method="get"> 
+            <!--Нужно ли так называть name или достаточно qu.1, qu.2, ...-->
+            Какой тег предназначен для создания ссылок:<br />
+            <input type="radio" name="link" value="1" />&lt;a&gt;<br />
+            <input type="radio" name="link" value="2" />&lt;a /&gt;<br />
+            <input type="radio" name="link" value="3" />&lt;ref&gt;<br />
+            <input type="radio" name="link" value="4" />&lt;ref /&gt;<br />
+            Какой тег предназначен для создания нумерованного списка:<br />
+            <input type="radio" name="numlist" value="1" />&lt;li&gt;<br />
+            <input type="radio" name="numlist" value="2" />&lt;dl&gt;<br />
+            <input type="radio" name="numlist" value="3" />&lt;ol&gt;<br />
+            <input type="radio" name="numlist" value="4" />&lt;ul&gt;<br />
+            Какой тег предназначен для передачи служебной информации браузеру:<br />
+            <input type="radio" name="info" value="1" />&lt;info&gt;<br />
+            <input type="radio" name="info" value="2" />&lt;info /&gt;<br />
+            <input type="radio" name="info" value="3" />&lt;meta&gt;<br />
+            <input type="radio" name="info" value="4" />&lt;meta /&gt;<br />
+            Какие теги используются при создании таблицы:<br />
+            <input type="checkbox" name="table" value="1" />&lt;bodyt&gt;<br />
+            <input type="checkbox" name="table" value="2" />&lt;td&gt;<br />
+            <input type="checkbox" name="table" value="3" />&lt;caption&gt;<br />
+            <input type="checkbox" name="table" value="4" />&lt;column&gt;<br />
+            Какие атрибуты используются при создании форм:<br />
+            <input type="checkbox" name="form" value="1" />autocomplete<br />
+            <input type="checkbox" name="form" value="2" />action<br />
+            <input type="checkbox" name="form" value="3" />charset<br />
+            <input type="checkbox" name="form" value="4" />validate<br />
+            
+            <!--На onclick повесить вычисление и выведение результата. Узнать, нужен ли атрибут action в form. Точно ли тут нужно использовать button, а не submit-->
+            <input type="button" name="result" value="Результат" onclick="callFunction()" />
+         </form>
+      </main>
+      <!--Убрать перенос, когда в CSS закреплю footer внизу-->
+      <br />
+      
+      <footer>
+         <address>
+            <a href="mailto:mail@mail">Пишите: mail@mail</a>
+         </address>
+         <p style="margin: 0px;">© Фамилия И.О., год</p>
+      </footer>
+   </body>
+   
+</html>
