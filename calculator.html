@@ -10,65 +10,62 @@
       <header>  
          <img src="./frontEndLogo.png" alt="logo" />
          <h1 id="top">Технологии Front-End</h1>
-      </header>  
-      
-      <nav>
-         <ul>
-            <li><a href="./index.html">Главная</a></li>
-            <li><a href="./technologies.html">Технологии</a>
-               <ul>
-                  <li><a href="./html.html">HTML</a></li>
-                  <li><a href="./css.html">CSS</a></li>
-                  <li><a href="./bootstrap.html">Bootstrap</a></li>
-               </ul>
+         <nav>
+            <ul>
+               <li><a href="./index.html">Главная</a></li>
+               <li>
+                  <a href="./technologies.html">Технологии</a>
+                  <ul>
+                     <li><a href="./html.html">HTML</a></li>
+                     <li><a href="./css.html">CSS</a></li>
+                     <li><a href="./bootstrap.html">Bootstrap</a></li>
+                  </ul>
                </li>               
-            <li><a href="./calculator.html">Калькулятор</a></li>
-            <li><a href="./test.html">Тест</a></li>
-         </ul>
-      </nav>
-         
-      <main>  
+               <li><a href="./calculator.html">Калькулятор</a></li>
+               <li><a href="./test.html">Тест</a></li>
+            </ul>
+         </nav>
+      </header>  
+          
+      <form id="calculator" name="calculator">  
          <table border="1">
             <tr>
                <td colspan="5"> <input type="text" name="answer" value="" /></td>
             </tr>
             <tr>
-            <!--Убрать name в кнопках, если он не используется при вычислениях, на onclick повесить вычисление и выведение результата-->   
-               <td><input type="button" name="but7" value="7" onclick="callFunction()" /> </td>
-               <td><input type="button" name="but8" value="8" onclick="callFunction()" /></td>
-               <td><input type="button" name="but9" value="9" onclick="callFunction()" /></td>
-               <td><input type="button" name="but/" value="/" onclick="callFunction()" /></td>
-               <td><input type="reset" name="res" value="C" /></td>
+               <td><input type="button" name="but7" value="7" /> </td>
+               <td><input type="button" name="but8" value="8" /></td>
+               <td><input type="button" name="but9" value="9" /></td>
+               <td><input type="button" name="but/" value="/" /></td>
+               <td><input type="button" name="res" value="C" /></td>
             </tr> 
             <tr>
-               <td><input type="button" name="but4" value="4" onclick="callFunction()" /></td>
-               <td><input type="button" name="but5" value="5" onclick="callFunction()" /></td>
-               <td><input type="button" name="but6" value="6" onclick="callFunction()" /></td>
-               <td><input type="button" name="but*" value="*" onclick="callFunction()" /></td>
-               <td><input type="button" name="but-change" value="&plusmn;" onclick="callFunction()" /></td>
+               <td><input type="button" name="but4" value="4" /></td>
+               <td><input type="button" name="but5" value="5" /></td>
+               <td><input type="button" name="but6" value="6" /></td>
+               <td><input type="button" name="but*" value="*" /></td>
+               <td><input type="button" name="but-change" value="&plusmn;" /></td>
             </tr> 
             <tr>
-               <td><input type="button" name="but1" value="1" onclick="callFunction()" /></td>
-               <td><input type="button" name="but2" value="2" onclick="callFunction()" /></td>
-               <td><input type="button" name="but3" value="3" onclick="callFunction()" /></td>
-               <td><input type="button" name="but-" value="-" onclick="callFunction()" /></td>
-               <td rowspan="2"><input type="button" name="but=" value="=" onclick="callFunction()" /></td>
+               <td><input type="button" name="but1" value="1" /></td>
+               <td><input type="button" name="but2" value="2" /></td>
+               <td><input type="button" name="but3" value="3" /></td>
+               <td><input type="button" name="but-" value="-" /></td>
+               <td rowspan="2"><input type="button" name="but=" value="=" /></td>
             </tr> 
             <tr>
-               <td colspan="2"><input type="button" name="but0" value="0" onclick="callFunction()" /></td>
-               <td><input type="button" name="but." value="." onclick="callFunction()" /></td>
-               <td><input type="button" name="but+" value="+" onclick="callFunction()" /></td>
+               <td colspan="2"><input type="button" name="but0" value="0" /></td>
+               <td><input type="button" name="but." value="." /></td>
+               <td><input type="button" name="but+" value="+" /></td>
             </tr> 
          </table>
-      </main>
-      <!--Убрать перенос, когда в CSS закреплю footer внизу-->
-      <br />
+      </form>
       
       <footer>
          <address>
             <a href="mailto:mail@mail">Пишите: mail@mail</a>
          </address>
-         <p style="margin: 0px;">© Фамилия И.О., год</p>
+         &copy; Фамилия И.О., год
       </footer>
    </body>
    
