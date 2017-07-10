@@ -1,0 +1,137 @@
+* {
+   margin: 0;
+}
+
+body {
+   width: 1000px;
+   margin: 0 auto;
+   background-color: gray; 
+}
+
+nav {
+   width: 110px;
+   color: blue;
+   background-color: #c3bfbf;
+   float: left;
+   border-radius: 10px;
+}
+
+.main {
+   min-height: 200px;
+   background-color: white;
+   border-radius: 10px;
+   padding: 5px;
+}
+
+main, form {
+   margin-left: 115px;
+}
+
+footer, header {
+   background-color: white;
+   text-align: center;
+   clear: both;
+   border-radius: 10px;
+   padding: 5px;
+}
+
+#logo {
+   width: 104px;
+   height: 35px;
+   font-family: "Courier New";
+   font-size: 45px; 
+   font-weight: bold;
+   float: left;
+   border: solid 3px black;
+   border-radius: 25px/10px;
+   line-height: 0.85; 
+}
+
+aside {
+   width: 25%;
+   background-color: #c3bfbf;
+   float: right;
+   margin: 5px;
+   padding: 5px;
+   border-radius: 10px;
+   font-family: sans-serif;
+   font-size: 0.8em;
+}
+
+aside > h3 {
+   margin: 5px;
+}
+
+section {
+   margin-top: 20px;
+}
+
+p, dd {
+   text-align: justify;
+   text-indent: 30px;
+}
+
+nav > ul {
+   padding: 0;
+   margin: 5px;
+}
+
+li {
+   list-style-type: none;
+}
+
+li > ul {
+  padding-left: 30px;
+}
+
+a:visited {
+   color: blue;
+}
+
+a:active  {
+   color: darkred;
+}
+
+a[href="#top"] {
+   font-size: .95em; 
+}
+
+table {
+   border-spacing: .5px;
+   margin: 0 auto;
+}
+
+input[name="answer"] {
+   width: 204px;
+   height: 25px;
+   font-weight: bold;
+}
+
+input[name|="but"] {
+   width: 40px;
+   height: 30px;
+   font-weight: bold;
+}
+
+input[name|="vdbbut"] {
+   width: 40px;
+   height: 62px;
+   font-weight: bold;
+}
+
+input[name|="hdbbut"] {
+   width: 82px;
+   height: 30px;
+   font-weight: bold;
+}
+
+form > div {
+   border: solid 2px black;
+   border-radius: 5px;
+   padding: 3px;
+   margin: 3px;
+}
+
+input[name="result"] {
+   margin-left: 3px;
+}

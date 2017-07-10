@@ -4,12 +4,16 @@
    <head>
       <title>Калькулятор</title>
       <meta charset="utf-8" />
+      <link rel="stylesheet" type="text/css" href="./homework.css" />
    </head>
    
    <body>
       <header>  
-         <img src="./frontEndLogo.png" alt="logo" />
+         <div id="logo">F-E</div>
          <h1 id="top">Технологии Front-End</h1>
+      </header>
+      
+      <div class="main">
          <nav>
             <ul>
                <li><a href="./index.html">Главная</a></li>
@@ -25,41 +29,41 @@
                <li><a href="./test.html">Тест</a></li>
             </ul>
          </nav>
-      </header>  
-          
-      <form id="calculator" name="calculator">  
-         <table border="1">
-            <tr>
-               <td colspan="5"> <input type="text" name="answer" value="" /></td>
-            </tr>
-            <tr>
-               <td><input type="button" name="but7" value="7" /> </td>
-               <td><input type="button" name="but8" value="8" /></td>
-               <td><input type="button" name="but9" value="9" /></td>
-               <td><input type="button" name="but/" value="/" /></td>
-               <td><input type="button" name="res" value="C" /></td>
-            </tr> 
-            <tr>
-               <td><input type="button" name="but4" value="4" /></td>
-               <td><input type="button" name="but5" value="5" /></td>
-               <td><input type="button" name="but6" value="6" /></td>
-               <td><input type="button" name="but*" value="*" /></td>
-               <td><input type="button" name="but-change" value="&plusmn;" /></td>
-            </tr> 
-            <tr>
-               <td><input type="button" name="but1" value="1" /></td>
-               <td><input type="button" name="but2" value="2" /></td>
-               <td><input type="button" name="but3" value="3" /></td>
-               <td><input type="button" name="but-" value="-" /></td>
-               <td rowspan="2"><input type="button" name="but=" value="=" /></td>
-            </tr> 
-            <tr>
-               <td colspan="2"><input type="button" name="but0" value="0" /></td>
-               <td><input type="button" name="but." value="." /></td>
-               <td><input type="button" name="but+" value="+" /></td>
-            </tr> 
-         </table>
-      </form>
+             
+         <form id="calculator" name="calculator">  
+            <table>
+               <tr>
+                  <td colspan="5"> <input type="text" name="answer" value="" /></td>
+               </tr>
+               <tr>
+                  <td><input type="button" name="but-7" value="7" /> </td>
+                  <td><input type="button" name="but-8" value="8" /></td>
+                  <td><input type="button" name="but-9" value="9" /></td>
+                  <td><input type="button" name="but-/" value="/" /></td>
+                  <td><input type="button" name="but-res" value="C" /></td>
+               </tr> 
+               <tr>
+                  <td><input type="button" name="but-4" value="4" /></td>
+                  <td><input type="button" name="but-5" value="5" /></td>
+                  <td><input type="button" name="but-6" value="6" /></td>
+                  <td><input type="button" name="but-*" value="*" /></td>
+                  <td><input type="button" name="but-change" value="&plusmn;" /></td>
+               </tr> 
+               <tr>
+                  <td><input type="button" name="but-1" value="1" /></td>
+                  <td><input type="button" name="but-2" value="2" /></td>
+                  <td><input type="button" name="but-3" value="3" /></td>
+                  <td><input type="button" name="but--" value="-" /></td>
+                  <td rowspan="2"><input type="button" name="vdbbut-=" value="=" /></td>
+               </tr> 
+               <tr>
+                  <td colspan="2"><input type="button" name="hdbbut-0" value="0" /></td>
+                  <td><input type="button" name="but-." value="." /></td>
+                  <td><input type="button" name="but-+" value="+" /></td>
+               </tr> 
+            </table>
+         </form>
+      </div>
       
       <footer>
          <address>
