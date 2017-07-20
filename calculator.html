@@ -4,6 +4,7 @@
    <head>
       <title>Калькулятор</title>
       <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" type="text/css" href="./homework.css" />
    </head>
    
@@ -11,27 +12,24 @@
       <header>  
          <div id="logo">F-E</div>
          <h1 id="top">Технологии Front-End</h1>
+         <nav>
+            <ul class="nav">
+               <li><a href="./index.html">Главная</a></li>
+               <li class="outer">
+                  <a href="./technologies.html">Технологии</a>
+                  <ul class="inner">
+                     <li><a href="./html.html">HTML</a></li>
+                     <li><a href="./css.html">CSS</a></li>
+                     <li><a href="./bootstrap.html">Bootstrap</a></li>
+                  </ul>
+               </li>                
+               <li><a href="./calculator.html">Калькулятор</a></li>
+               <li><a href="./test.html">Тест</a></li>
+            </ul>
+         </nav>
       </header>
       
-      <div class="main-with-nav">
-         <div class="nav">
-            <nav>
-               <ul>
-                  <li><a href="./index.html">Главная</a></li>
-                  <li>
-                     <a href="./technologies.html">Технологии</a>
-                     <ul>
-                        <li><a href="./html.html">HTML</a></li>
-                        <li><a href="./css.html">CSS</a></li>
-                        <li><a href="./bootstrap.html">Bootstrap</a></li>
-                     </ul>
-                  </li>               
-                  <li><a href="./calculator.html">Калькулятор</a></li>
-                  <li><a href="./test.html">Тест</a></li>
-               </ul>
-            </nav>
-         </div>   
-             
+      <div class="main">
          <form id="calculator" name="calculator">  
             <table>
                <tr>
@@ -42,7 +40,7 @@
                   <td><input type="button" name="but-8" value="8" /></td>
                   <td><input type="button" name="but-9" value="9" /></td>
                   <td><input type="button" name="but-/" value="/" /></td>
-                  <td><input type="button" name="but-res" value="C" /></td>
+                  <td><input type="button" name="but-res" value="c" /></td>
                </tr> 
                <tr>
                   <td><input type="button" name="but-4" value="4" /></td>
@@ -71,7 +69,7 @@
          <address>
             <a href="mailto:mail@mail">Пишите: mail@mail</a>
          </address>
-         &copy; Фамилия И.О., год
+         &copy; Тасун И.А., 2017
       </footer>
    </body>
    

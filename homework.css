@@ -1,77 +1,109 @@
 * {
    margin: 0;
+   box-sizing: border-box;
 }
 
 body {
-   width: 1000px;
+   width: 100%;
+   max-width: 1000px;
    margin: 0 auto;
    background-color: gray; 
 }
 
-.nav {
-   width: 110px;
-   color: blue;
-   float: left;
-}
-
-.main-with-nav {
+.main {
    min-height: 200px;
    background-color: white;
    border-radius: 10px;
    padding: 5px;
+   clear: left;
 }
 
 .up {
-   margin-top: 635px;
    font-size:.95em;
+   width: 120px;
+   height: 30px;
+   display: none;
+   background-color: white;
+   border: solid 2px orange;
+   border-radius: 5px;
+   padding: 3px;
+   z-index: 1; 
+   position: fixed;
+   bottom: 7px;
+}
+
+@media screen and (max-width: 991px) {
+   .up {
+      display: block;
+   }
 }
 
 #logo {
    width: 104px;
-   height: 35px;
+   height: 40px;
    font-family: "Courier New";
    font-size: 45px; 
    font-weight: bold;
    float: left;
    border: solid 3px black;
-   border-radius: 25px/10px;
+   border-radius: 23px/10px;
    line-height: 0.85; 
+   position: absolute;
+   top: 50%;
+   margin-top: -20px;
 }
 
-main, form {
-   margin-left: 115px;
+@media screen and (max-width: 545px) {
+   #logo {
+      display: none;
+   }
 }
 
-footer, header {
+footer, header{
    background-color: white;
    text-align: center;
    clear: both;
    border-radius: 10px;
    padding: 5px;
+   position: relative;
 }
 
 aside {
-   width: 25%;
+   width: 100%;
    background-color: #c3bfbf;
-   float: right;
    margin: 5px;
    padding: 5px;
    border-radius: 10px;
    font-family: sans-serif;
    font-size: 0.8em;
+   }
+
+@media screen and (min-width: 992px) {
+   aside {
+      width: 30%;
+      float: right;
+   }
 }
 
-nav {
-   background-color: #c3bfbf;
-   border-radius: 10px;
-   padding: 2px;
+#test {
+   padding: 5px;
 }
 
 form > div {
    border: solid 2px black;
    border-radius: 5px;
    padding: 3px;
-   margin: 3px;
+   margin-top: 3px;
+}
+   
+@media screen and (min-width: 992px) {
+   form > div {
+      width: 20%;
+      border: solid 2px black;
+      border-radius: 5px;
+      padding: 3px;
+      float: left;
+   }
 }
 
 section {
@@ -79,9 +111,11 @@ section {
 }
 
 table {
-   border-spacing: .5px;
+   width: 25%;
+   min-width: 180px;
+   border-spacing: 2px;
    margin: 0 auto;
-}
+   }
 
 aside > h3 {
    margin-left: 5px;
@@ -91,19 +125,35 @@ p, dd {
    text-align: justify;
    text-indent: 30px;
    margin-right: 5px;
+   margin-left: 5px;
 }
 
 nav > ul {
    padding: 0;
-   margin: 5px;
+}
+
+.nav > li {
+   display: inline-block;
 }
 
 li {
    list-style-type: none;
+   color: blue;
+   position: relative;
 }
 
-li > ul {
-  padding-left: 30px;
+.inner {
+  display: none;
+}
+
+.outer:hover .inner {
+  display: block;
+  position: absolute;
+  background-color: white;
+  border: solid 2px black;
+  border-radius: 5px;
+  padding: 3px;
+  left: 5%;
 }
 
 a:visited {
@@ -114,30 +164,40 @@ a:active  {
    color: darkred;
 }
 
+td {
+   padding: 0;
+}
+
 input[name="answer"] {
-   width: 206px;
-   height: 25px;
+   width: 100%;
+   height: 30px;
    font-weight: bold;
 }
 
 input[name|="but"] {
-   width: 40px;
-   height: 30px;
+   width: 100%;
+   height: 35px;
    font-weight: bold;
 }
 
 input[name|="vdbbut"] {
-   width: 40px;
-   height: 62.5px;
+   width: 100%;
+   height: 72.5px;
    font-weight: bold;
 }
 
 input[name|="hdbbut"] {
-   width: 82.5px;
-   height: 30px;
+   width: 100%;
+   height: 35px;
    font-weight: bold;
 }
 
+.result {
+   clear: left;
+   border: solid 1px white;
+}
+
 input[name="result"] {
-   margin-left: 3px;
+   display: block;
+   margin: 3px auto;
 }
