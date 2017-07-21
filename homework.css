@@ -32,7 +32,13 @@ body {
    bottom: 7px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px){
+   .up {
+      display: block;
+   }
+}
+
+@media screen and (max-height: 825px){
    .up {
       display: block;
    }
