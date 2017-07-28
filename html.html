@@ -12,40 +12,42 @@
       <script src="./jquery-3.2.1.js"></script>
       <script src="./bootstrap.js"></script>
       
-      <header class="container"> 
-         <a href="./index.html"><img id="top" src="./frontEndLogo.png" alt="FrontEndLogo" class="img-rounded img-responsive thumbnail pull-left" /></a>
-   
-         <h1 class="text-center">Основы Web-технологий</h1>
-         
-         <nav class="navbar navbar-default">
-         
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-                  <a href="./index.html" class="navbar-brand">Главная</a>
+      <header> 
+         <div class="container">
+            <a href="./index.html"><img id="top" src="./frontEndLogo.png" alt="FrontEndLogo" class="thumbnail pull-left" /></a>
+            <h1 class="text-center">Основы Web-технологий</h1>
+         </div>
+      
+      
+            <div class="container">
+               <nav class="navbar navbar-default">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                        <a href="./index.html" class="navbar-brand">Главная</a>
+                  </div>
+                     
+                  <div class="collapse navbar-collapse">
+                     <ul class="nav navbar-nav">
+                        <li><a href="./technologies.html">Технологии</a></li>
+                        <li class="active dropdown">
+                        <a href="#" data-toggle="dropdown"><span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="./html.html">HTML</a></li>
+                              <li><a href="./css.html">CSS</a></li>
+                              <li><a href="./bootstrap.html">Bootstrap</a></li>
+                           </ul> 
+                        </li> 
+                        <li><a href="./calculator.html">Калькулятор</a></li>
+                        <li><a href="./test.html">Тест</a></li>
+                     </ul>
+                  </div>
+               </nav>
             </div>
-               
-            <div class="collapse navbar-collapse">
-               <ul class="nav navbar-nav">
-                  <li><a href="./technologies.html">Технологии</a></li>
-                  <li class="active dropdown">
-                  <a href="#" data-toggle="dropdown"><span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                        <li><a href="./html.html">HTML</a></li>
-                        <li><a href="./css.html">CSS</a></li>
-                        <li><a href="./bootstrap.html">Bootstrap</a></li>
-                     </ul> 
-                  </li> 
-                  <li><a href="./calculator.html">Калькулятор</a></li>
-                  <li><a href="./test.html">Тест</a></li>
-               </ul>
-            </div>
- 
-         </nav>
-      </header>
+         </header>
          
          <div class="container">
             <div class="text-justify row">
